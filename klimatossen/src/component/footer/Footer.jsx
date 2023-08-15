@@ -21,7 +21,6 @@ export function Footer() {
               </a>
             </li>
           </ul>
-          
         </p>
       </section>
       <section className={style.tilmeld}>
@@ -35,7 +34,7 @@ export function Footer() {
           <input type="checkbox" />
           <label htmlFor="">Modtag Nyhedsbrev</label>
           <input type="checkbox" />
-          <input type="Submit" value="Send"/>
+          <input type="Submit" value="Send" />
         </form>
       </section>
     </footer>

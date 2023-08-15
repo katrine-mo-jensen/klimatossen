@@ -1,10 +1,10 @@
 import style from "../header/header.module.scss";
+import logo from "../../assets/logo.png"
 
 export function Header() {
   return (
     <header>
-      <h1>Klimatossen</h1>
-      <h2>Klima-tossen.dk</h2>
+      <img src={logo} alt="Klimatossen logo and url" />
       <p>
         "Det er rigtigt, at vi hver især kun kan bidrage lidt <br />
         til den samlede løsning"

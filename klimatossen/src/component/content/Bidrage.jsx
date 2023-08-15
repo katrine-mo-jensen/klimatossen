@@ -1,11 +1,12 @@
 import style from "../content/bidrage.module.scss";
+import checklist from "../../assets/checklist.png"
 
 export function Bidrage() {
   return (
-    <section className={style.Bidrage}>
+    <section className={style.bidrage}>
       <h3>Hvordan kan jeg bidrage?</h3>
       <section>
-        <img src="#" alt="Checklist" />
+        <img src={checklist} alt="Checklist" />
         <article>
           <h4>Hvordan belaster du miljøet mindst muligt i dagligdagen?</h4>
           <p>

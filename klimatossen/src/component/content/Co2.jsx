@@ -1,11 +1,12 @@
 import style from "../content/co2.module.scss";
+import cloud from "../../assets/cloud.png"
 
 export function Co2() {
   return (
-    <section className={style.Co2}>
+    <section className={style.co2}>
       <h3>Hvad er Co2?</h3>
       <section>
-        <img src="#" alt="Cloud" />
+        <img src={cloud} alt="Cloud" />
         <article>
           <h4>CO2 er en gasart der findes naturligt i Jordens atmosfære. </h4>
           <p>

@@ -1,11 +1,12 @@
 import style from "../content/arrangement.module.scss";
+import bucket from "../../assets/arrangement.png"
 
 export function Arrangement() {
   return (
     <section className={style.arrangement}>
       <h3>Deltage i arrangement</h3>
       <section>
-        <img src="#" alt="Cleaning supplies" />
+        <img src={bucket} alt="Cleaning supplies" />
         <article>
           <h4>Deltag i et af vores arrangementer og gør en forskel!</h4>
           <p>

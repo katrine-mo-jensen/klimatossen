@@ -1,11 +1,12 @@
 import style from "../content/klima.module.scss";
+import earth from "../../assets/earth.png"
 
 export function Klima() {
   return (
-    <section className={style.Klima}>
+    <section className={style.klima}>
       <h3>Klima og miljø</h3>
       <section>
-        <img src="#" alt="The earth with a termometer" />
+        <img src={earth} alt="The earth with a termometer" />
         <article>
           <h4>Kort om klimaet og miljøet</h4>
           <p>
