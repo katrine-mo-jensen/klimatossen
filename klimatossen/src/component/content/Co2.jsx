@@ -4,6 +4,7 @@ import cloud from "../../assets/cloud.png"
 export function Co2() {
   return (
     <section className={style.co2}>
+      <div>
       <h3>Hvad er Co2?</h3>
       <section>
         <img src={cloud} alt="Cloud" />
@@ -25,6 +26,7 @@ export function Co2() {
         </article>
       </section>
       <a href="#">Læs mere</a>
+      </div>
     </section>
   );
 }

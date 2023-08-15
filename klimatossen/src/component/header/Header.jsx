@@ -4,7 +4,8 @@ import logo from "../../assets/logo.png"
 export function Header() {
   return (
     <header>
-      <img src={logo} alt="Klimatossen logo and url" />
+     
+      <img className="logo" src={logo} alt="Klimatossen logo and url" />
       <p>
         "Det er rigtigt, at vi hver især kun kan bidrage lidt <br />
         til den samlede løsning"
@@ -19,6 +20,7 @@ export function Header() {
             <li><a href="#">Tilmeld dig</a></li>
         </ul>
       </nav>
+      
     </header>
   );
 }
