@@ -32,10 +32,14 @@ export function Footer() {
           <input type="text" placeholder="Hjem by" />
           <input type="email" placeholder="Email adresse" />
           <input type="tel" placeholder="Telefon nummer" />
-          <label htmlFor="">Få en samtale med Klimatossen </label>
+          <div className={style.checkbox}>
+          <label htmlFor="">Få en samtale med Klimatossen</label>
           <input type="checkbox" />
+          </div>
+          <div className={style.checkbox}>
           <label htmlFor="">Modtag Nyhedsbrev</label>
           <input type="checkbox" />
+          </div>
           <input type="Submit" value="Send" />
         </form>
       </section>
