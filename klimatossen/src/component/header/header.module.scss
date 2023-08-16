@@ -3,31 +3,32 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-
-  img {
-    padding: 20px;
-    max-width: 1280px;
-  }
-  p {
-    font-weight: 300;
-    font-size: 1.375rem;
-    font-style: italic;
-    display: flex;
-    justify-content: right;
-    color: #8fa7bf;
-    padding: 20px;
-  }
-  nav {
-    padding: 10px;
-    ul {
-      display: flex;
-      justify-content: right;
-      gap: 20px;
-      li {
-        list-style-type: none;
-        a {
-          text-decoration: none;
-          color: white;
+  div {
+    max-width: 1080px;
+    img {
+      padding: 20px;
+    }
+    p {
+      font-size: 1.375rem;
+      font-style: italic;
+      text-align: right;
+      color: #8fa7bf;
+      padding: 20px;
+    }
+    nav {
+      padding: 10px;
+      text-align: right;
+      ul {
+        gap: 20px;
+        li {
+          list-style-type: none;
+          a {
+            text-decoration: none;
+            color: white;
+          }
+          a:hover {
+            color: #8fa7bf;
+          }
         }
       }
     }
