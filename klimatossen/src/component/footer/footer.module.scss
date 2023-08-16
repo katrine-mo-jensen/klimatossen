@@ -1,3 +1,7 @@
 footer {
     background-image: url(../../assets/Bg-Tile-Blue-Light.png);
+    width: 100%;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
