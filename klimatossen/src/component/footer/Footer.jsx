@@ -11,7 +11,7 @@ export function Footer() {
           <br /> 9922 3344 (Åben man - fre: 08.00 - 16.00)
         </p>
         <h5>SAMARBEJDSPARTNERE:</h5>
-        <p>
+        
           <ul>
             <li>
               <a href="https://www.dn.dk/">https://www.dn.dk/</a>
@@ -22,7 +22,7 @@ export function Footer() {
               </a>
             </li>
           </ul>
-        </p>
+        
         <h1>Klima<span>tossen</span></h1>
       </section>
       <section className={style.tilmeld}>
