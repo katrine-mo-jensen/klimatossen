@@ -1,6 +1,6 @@
-const staticCacheName = "site-static-v1.1";
+const staticCacheName = "site-static-v1.2";
 
-const assets = ["/", "/index.html"];
+const assets = ["/", "/index.html", "src/component/header/header.module.scss"];
 // kan også linke stylesheets^
 
 // Install Service Worker
@@ -9,7 +9,7 @@ const assets = ["/", "/index.html"];
 self.addEventListener("install", (event) => {
   console.log("Service Worker has been installed");
   event.waitUntil(
-    caches.open(staticCacheName).then(cache => {
+    caches.open(staticCacheName).then((cache) => {
       console.log("Write asset files to cache");
       cache.addAll(assets);
     })
