@@ -8,7 +8,7 @@
   "background_color": "#ffffff",
   "theme_color": "#ffffff",
   "orientation": "portrait-primary",
-  "form_factor" : "wide",
+  "form_factor": "wide",
   "icons": [
     {
       "src": "src/assets/icons/windows11/SmallTile.scale-100.png",
