@@ -30,8 +30,12 @@ self.addEventListener("activate", (event) => {
   );
 });
 
-/* // Fetch event
+// Fetch event
 self.addEventListener("fetch", (event) => {
   console.log("Fetch event", event);
+ /*  caches.match(event.request).then(cacheRes => {
+    return(
+        cacheRes ||
+    )
+  }) */
 });
- */
