@@ -1,7 +1,12 @@
 const staticCacheName = "site-static-v1.2";
 const dynamicCacheName = "site-dynamic-v1";
 
-const assets = ["/", "/index.html", "src/component/header/header.module.scss"];
+const assets = [
+  "/",
+  "/index.html",
+  "src/component/header/header.module.scss",
+  "/fallback.html",
+];
 // kan også linke stylesheets^
 
 caches.open("my-cache").then((cache) => {
@@ -45,18 +50,24 @@ self.addEventListener("fetch", (event) => {
   if (!(event.request.url.indexOf("http") === 0)) return;
 
   event.respondWith(
-    caches.match(event.request).then((cacheRes) => {
-      return (
-        cacheRes ||
-        fetch(event.request).then(async (fetchRes) => {
-          return caches.open(dynamicCacheName).then((cache) => {
-            cache.put(event.request.url, fetchRes.clone());
+    caches
+      .match(event.request)
+      .then((cacheRes) => {
+        return (
+          cacheRes ||
+          fetch(event.request).then(async (fetchRes) => {
+            return caches.open(dynamicCacheName).then((cache) => {
+              cache.put(event.request.url, fetchRes.clone());
 
-            return fetchRes;
-          });
-        })
-      );
-    })
+              return fetchRes;
+            });
+          })
+        );
+      })
+      .catch(() => {
+        // Hvis ovenstående giver fejl kaldes fallback siden
+        return caches.match("/fallback.html");
+      })
   );
   // Limit
   const limitCacheTwo = (cacheName, numberOfAllowedFiles) => {
@@ -70,5 +81,6 @@ self.addEventListener("fetch", (event) => {
       });
     });
   };
+
   limitCacheTwo(dynamicCacheName, 2);
 });
